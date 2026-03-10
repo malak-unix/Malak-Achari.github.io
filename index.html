@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Malak Achari | AI/ML & Data Science</title>
+  <meta name="description" content="Portfolio de Malak Achari — Étudiante ingénieure IA & Data Science (EMSI). Projets ML, data, systèmes, BI." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background effects -->
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-name">Malak</span><span class="brand-tag">&lt;/&gt;</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">Accueil</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Toggle language">
+          FR / EN
+        </button>
+        <button class="burger" id="burger" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="section hero container">
+      <div class="hero-left">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio</p>
+
+        <h1 class="hero-title">
+          <span data-i18n="hero.hi">Salut, je suis</span>
+          <span class="accent">Malak Achari</span>
+        </h1>
+
+        <h2 class="hero-subtitle" data-i18n="hero.subtitle">
+          Étudiante Ingénieure — IA & Data Science
+        </h2>
+
+        <p class="hero-desc" data-i18n="hero.desc">
+          Je transforme les données en solutions concrètes : Machine Learning, Deep Learning (scikit-learn, TensorFlow),
+          analyse de données (EDA/Data Mining) et SQL.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="assets/cv.pdf" download>
+            <span data-i18n="hero.download">Télécharger le CV</span>
+            <span class="btn-icon" aria-hidden="true">⭳</span>
+          </a>
+
+          <a class="btn ghost" href="#projects">
+            <span data-i18n="hero.viewProjects">Voir les projets</span>
+          </a>
+        </div>
+
+        <div class="socials">
+          <a class="social" href="https://www.linkedin.com/in/malak-achari-44b398252" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            in
+          </a>
+          <a class="social" href="#" id="githubLink" aria-label="GitHub (add your link)">
+            GH
+          </a>
+          <a class="social" href="mailto:malakachari54@gmail.com" aria-label="Email">✉</a>
+        </div>
+
+        <p class="tiny" data-i18n="hero.note">
+          Rabat, Maroc • Stage PFA recherché
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <img class="avatar" src="assets/profile.jpg" alt="Photo de Malak Achari" />
+          <div class="float-badge b1">ML</div>
+          <div class="float-badge b2">DL</div>
+          <div class="float-badge b3">SQL</div>
+          <div class="float-badge b4">AI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title" data-i18n="about.title">À propos</h2>
+
+      <div class="about-grid">
+        <div class="card about-card">
+          <h3 data-i18n="about.meTitle">Qui je suis</h3>
+          <p data-i18n="about.meText">
+            Étudiante ingénieure en 4ᵉ année (EMSI), option Intelligence Artificielle & Science des Données.
+            Je recherche un stage PFA orienté AI/ML ou Data.
+          </p>
+          <div class="chips">
+            <span class="chip" data-i18n="about.chip1">Machine Learning</span>
+            <span class="chip" data-i18n="about.chip2">Deep Learning</span>
+            <span class="chip" data-i18n="about.chip3">Data Mining</span>
+            <span class="chip" data-i18n="about.chip4">SQL</span>
+          </div>
+        </div>
+
+        <div class="card about-card">
+          <h3 data-i18n="about.focusTitle">Ce que je peux apporter</h3>
+          <ul class="list">
+            <li data-i18n="about.li1">Analyse & préparation des données (EDA, nettoyage, features)</li>
+            <li data-i18n="about.li2">Modèles ML/DL + évaluation (metrics, comparaison)</li>
+            <li data-i18n="about.li3">Bases solides en architecture des données et systèmes</li>
+          </ul>
+        </div>
+
+        <div class="card about-card">
+          <h3 data-i18n="about.expTitle">Expérience</h3>
+          <p class="muted" data-i18n="about.expText">
+            Stage d’été chez AKWA Group (Casablanca) — développement d’un module Odoo pour la gestion des abonnements fixe/mobile.
+          </p>
+          <div class="chips">
+            <span class="chip">Odoo</span>
+            <span class="chip">Python</span>
+            <span class="chip">XML</span>
+            <span class="chip">UML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title" data-i18n="skills.title">Compétences</h2>
+
+      <div class="skills-grid">
+        <div class="card">
+          <h3 data-i18n="skills.aiTitle">AI / ML & GenAI</h3>
+          <p class="muted" data-i18n="skills.aiText">
+            Machine Learning, Deep Learning, Data Mining (EDA), Text/Web Mining, Prompt Engineering, RAG, Multi-agents.
+          </p>
+          <div class="chips">
+            <span class="chip">scikit-learn</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">pandas</span>
+            <span class="chip">NumPy</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="skills.dataTitle">Data & Bases de données</h3>
+          <p class="muted" data-i18n="skills.dataText">
+            SQL (PL/SQL, T-SQL), Oracle, SQL Server, MySQL, MongoDB, Cassandra, Neo4j.
+          </p>
+          <div class="chips">
+            <span class="chip">SQL</span>
+            <span class="chip">Oracle</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="skills.sysTitle">Systèmes & Outils</h3>
+          <p class="muted" data-i18n="skills.sysText">
+            Docker, Linux (Red Hat), VMware, VirtualBox, Hadoop/HDFS (concepts), Git/GitHub, Jupyter/Anaconda, Google Colab.
+          </p>
+          <div class="chips">
+            <span class="chip">Docker</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Git</span>
+            <span class="chip">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="projects.title">Projets</h2>
+        <div class="tabs">
+          <button class="tab active" type="button" data-filter="all" data-i18n="projects.tabAll">Tous</button>
+          <button class="tab" type="button" data-filter="ai" data-i18n="projects.tabAI">AI / Data</button>
+          <button class="tab" type="button" data-filter="systems" data-i18n="projects.tabSys">Systèmes</button>
+          <button class="tab" type="button" data-filter="software" data-i18n="projects.tabSoft">Logiciel</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- 1 -->
+        <article class="card project" data-tags="ai">
+          <h3 data-i18n="p1.title">Classification énergétique des bâtiments</h3>
+          <p class="muted" data-i18n="p1.desc">
+            EDA, nettoyage, entraînement (SVM/Arbre/KNN), évaluation et app web de prédiction.
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">pandas</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Django</span>
+          </div>
+          <div class="actions">
+            <button class="btn small disabled" type="button" disabled data-i18n="projects.repoSoon">Repository (bientôt)</button>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="card project" data-tags="systems">
+          <h3 data-i18n="p2.title">Mini Data Centre (Proxmox / pfSense)</h3>
+          <p class="muted" data-i18n="p2.desc">
+            3 VMs (Firewall/Web/DB), WAN/DMZ/LAN, NAT/Port forwarding, règles firewall.
+          </p>
+          <div class="chips">
+            <span class="chip">Proxmox</span>
+            <span class="chip">pfSense</span>
+            <span class="chip">Ubuntu</span>
+            <span class="chip">Apache</span>
+            <span class="chip">MySQL</span>
+          </div>
+          <div class="actions">
+            <button class="btn small disabled" type="button" disabled data-i18n="projects.repoSoon">Repository (bientôt)</button>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="card project" data-tags="software">
+          <h3 data-i18n="p3.title">Gestion d’un cabinet dentaire (Java Swing)</h3>
+          <p class="muted" data-i18n="p3.desc">
+            Application desktop en équipe, architecture 3-tiers (MVC/Service/DAO), modules RDV, dossier patient, facturation, rôles.
+          </p>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">Swing</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">JDBC</span>
+            <span class="chip">Maven</span>
+          </div>
+          <div class="actions">
+            <button class="btn small disabled" type="button" disabled data-i18n="projects.repoSoon">Repository (bientôt)</button>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="card project" data-tags="software">
+          <h3 data-i18n="p4.title">Gestion d’un club de billard (Django)</h3>
+          <p class="muted" data-i18n="p4.desc">
+            Application web : réservations, tournois, utilisateurs/rôles, espace communauté.
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Django</span>
+            <span class="chip">UML</span>
+          </div>
+          <div class="actions">
+            <button class="btn small disabled" type="button" disabled data-i18n="projects.repoSoon">Repository (bientôt)</button>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="card project" data-tags="software">
+          <h3 data-i18n="p5.title">Stage AKWA Group — Module Odoo</h3>
+          <p class="muted" data-i18n="p5.desc">
+            Conception et développement d’un module Odoo pour la gestion des abonnements fixe/mobile.
+          </p>
+          <div class="chips">
+            <span class="chip">Odoo</span>
+            <span class="chip">Python</span>
+            <span class="chip">XML</span>
+            <span class="chip">UML</span>
+          </div>
+          <div class="actions">
+            <button class="btn small disabled" type="button" disabled data-i18n="projects.repoSoon">Repository (bientôt)</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+
+      <div class="contact-grid">
+        <form class="card form" id="contactForm">
+          <label class="label">
+            <span data-i18n="contact.name">Nom</span>
+            <input class="input" type="text" name="name" placeholder="Votre nom" required />
+          </label>
+
+          <label class="label">
+            <span>Email</span>
+            <input class="input" type="email" name="email" placeholder="Votre email" required />
+          </label>
+
+          <label class="label">
+            <span data-i18n="contact.msg">Message</span>
+            <textarea class="input textarea" name="message" rows="6" placeholder="Votre message..." required></textarea>
+          </label>
+
+          <button class="btn primary full" type="submit">
+            <span data-i18n="contact.send">Envoyer un message</span>
+          </button>
+
+          <p class="tiny muted" data-i18n="contact.note">
+            Le bouton ouvre votre application mail (mailto).
+          </p>
+        </form>
+
+        <div class="card contact-side">
+          <h3 data-i18n="contact.quick">Infos rapides</h3>
+          <p class="muted">
+            <strong>Email:</strong> <a href="mailto:malakachari54@gmail.com">malakachari54@gmail.com</a><br />
+            <strong>Tél:</strong> +212 6 35 53 09 93<br />
+            <strong data-i18n="contact.locLabel">Localisation:</strong> Rabat, Maroc
+          </p>
+
+          <div class="socials">
+            <a class="social" href="https://www.linkedin.com/in/malak-achari-44b398252" target="_blank" rel="noreferrer">in</a>
+            <a class="social" href="#" id="githubLink2">GH</a>
+            <a class="social" href="assets/cv.pdf" download>CV</a>
+          </div>
+
+          <p class="tiny muted" data-i18n="contact.tip">
+            Astuce : ajoute ton lien GitHub dans script.js (githubUrl).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <p class="tiny muted">© <span id="year"></span> Malak Achari</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
